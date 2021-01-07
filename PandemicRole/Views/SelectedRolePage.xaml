@@ -3,7 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PandemicRole.Views.SelectedRolePage"
              xmlns:resources="clr-namespace:PandemicRole.Infrastructure.Globalization"
+             xmlns:viewModel="clr-namespace:PandemicRole.ViewModels"
              >
+    <ContentPage.BindingContext>
+        <viewModel:SelectedRolePageViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <!--<Grid Padding="0">
             <Image
@@ -19,7 +23,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackLayout BackgroundColor="DarkSlateBlue" Grid.Row="0">
-                <Label Text="{x:Static resources:Localization.Role_61}"
+                <Label Text="{Binding Role}"
                        Padding="0,70,0,30"
                        FontSize="24"
                        FontAttributes="Bold"
@@ -32,7 +36,7 @@
                        Padding="0,50,0,30"
                        HorizontalTextAlignment="Center"
                        TextColor="White"></Label>
-                <Label x:Name="role_description"
+                <Label Text="{Binding RoleDescription}"
                        FontSize="Large"
                        Padding="10" TextType="Text"
                        HorizontalTextAlignment="Center"
