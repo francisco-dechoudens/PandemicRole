@@ -12,7 +12,16 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
+    <data name="Role_Scientist" xml:space="preserve">
+        <value>CIENTIFICO</value>
+    </data>   
     <data name="Role_Scientist_Description" xml:space="preserve">
         <value>Solo necesitas 4 cartas del mismo color para realizar la acción "Descubre una Cura".</value>
+    </data>
+        <data name="Role_Pilot" xml:space="preserve">
+        <value>PILOTO</value>
+    </data>
+    <data name="Role_Pilot_Description" xml:space="preserve">
+        <value>* Transporta a otros \n \n * Regresa desde cualquier lugar a una estación de investigación por una acción \n \n * En lugar de ir a la ciudad que se muestra en la tarjeta descartada para un vuelo directo, puedes ir a cualquier ciudad de ese color</value>
     </data>
 </root>

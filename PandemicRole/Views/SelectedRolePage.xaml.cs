@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
+using PandemicRole.Infrastructure.Globalization;
 
 namespace PandemicRole.Views
 {
@@ -9,6 +10,7 @@ namespace PandemicRole.Views
         public SelectedRolePage()
         {
             InitializeComponent();
+            role_description.Text = Localization.Role_Pilot_Description.Replace("\\n", Environment.NewLine);
         }
 
         //protected override void OnSizeAllocated(double width, double height)

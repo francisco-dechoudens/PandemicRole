@@ -19,7 +19,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackLayout BackgroundColor="DarkSlateBlue" Grid.Row="0">
-                <Label Text="{x:Static resources:Localization.Role_Scientist}"
+                <Label Text="{x:Static resources:Localization.Role_Pilot}"
                        Padding="0,70,0,30"
                        FontSize="24"
                        FontAttributes="Bold"
@@ -32,9 +32,9 @@
                        Padding="0,50,0,30"
                        HorizontalTextAlignment="Center"
                        TextColor="White"></Label>
-                <Label Text="{x:Static resources:Localization.Role_Scientist_Description}"
+                <Label x:Name="role_description"
                        FontSize="Large"
-                       Padding="10"
+                       Padding="10" TextType="Text"
                        HorizontalTextAlignment="Center"
                        TextColor="White"></Label>
             </StackLayout>

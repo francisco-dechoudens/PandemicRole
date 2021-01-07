@@ -18,4 +18,10 @@
     <data name="Role_Scientist_Description" xml:space="preserve">
         <value>You need only 4 cards of the same color to do the "Discover a Cure" action</value>
     </data>
+    <data name="Role_Pilot" xml:space="preserve">
+        <value>PILOT</value>
+    </data>
+    <data name="Role_Pilot_Description" xml:space="preserve">
+        <value>* Carries others \n\n* Returns from anywhere to a research station for one action \n\n* Instead of going to the city pictured on the card discarded for a direct flight, you can go to any city of that color</value>
+    </data>
 </root>

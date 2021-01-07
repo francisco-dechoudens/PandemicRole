@@ -47,9 +47,27 @@ namespace PandemicRole.Infrastructure.Globalization {
             }
         }
         
+        internal static string Role_Scientist {
+            get {
+                return ResourceManager.GetString("Role_Scientist", resourceCulture);
+            }
+        }
+        
         internal static string Role_Scientist_Description {
             get {
                 return ResourceManager.GetString("Role_Scientist_Description", resourceCulture);
+            }
+        }
+        
+        internal static string Role_Pilot {
+            get {
+                return ResourceManager.GetString("Role_Pilot", resourceCulture);
+            }
+        }
+        
+        internal static string Role_Pilot_Description {
+            get {
+                return ResourceManager.GetString("Role_Pilot_Description", resourceCulture);
             }
         }
     }
