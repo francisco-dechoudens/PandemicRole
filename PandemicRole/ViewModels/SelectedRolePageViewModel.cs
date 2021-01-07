@@ -1,14 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Reflection;
+using System.Resources;
 using PandemicRole.Infrastructure.Globalization;
 
 namespace PandemicRole.ViewModels
 {
     public class SelectedRolePageViewModel : BaseViewModel
     {
+        private readonly Random _random = new Random();
+
         public SelectedRolePageViewModel()
         {
-            this.role = Localization.Role_15;
-            this.roleDescription = Localization.Role_15_Description.Replace("\\n", Environment.NewLine);
+            var rm = new ResourceManager("PandemicRole.Infrastructure.Globalization.Localization", Assembly.GetExecutingAssembly());
+
+            var number =_random.Next(1,89);
+            role = rm.GetString($"Role_{number}");
+            roleDescription= rm.GetString($"Role_{number}_Description").Replace("\\n", Environment.NewLine);
+
+            //FOr future
+            //var Links = new Dictionary<string, string>();
+            //foreach (var resource in rm.GetResourceSet(CultureInfo.CurrentCulture, true, true))
+            //{
+            //    var r = (System.Collections.DictionaryEntry)resource;
+            //    Links.Add(r.Key.ToString(), r.Value.ToString());
+            //}
         }
 
         private string role;
