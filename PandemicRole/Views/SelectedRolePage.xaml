@@ -19,7 +19,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackLayout BackgroundColor="DarkSlateBlue" Grid.Row="0">
-                <Label Text="{x:Static resources:Localization.Role_Pilot}"
+                <Label Text="{x:Static resources:Localization.Role_61}"
                        Padding="0,70,0,30"
                        FontSize="24"
                        FontAttributes="Bold"

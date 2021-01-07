@@ -12,16 +12,538 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="Role_Scientist" xml:space="preserve">
-        <value>CIENTIFICO</value>
-    </data>   
-    <data name="Role_Scientist_Description" xml:space="preserve">
-        <value>Solo necesitas 4 cartas del mismo color para realizar la acción "Descubre una Cura".</value>
+    <data name="Role_1" xml:space="preserve">
+        <value>Medic (Original Game)</value>
     </data>
-        <data name="Role_Pilot" xml:space="preserve">
-        <value>PILOTO</value>
+    <data name="Role_2" xml:space="preserve">
+        <value>Dispatcher (Original Game)</value>
     </data>
-    <data name="Role_Pilot_Description" xml:space="preserve">
-        <value>* Transporta a otros \n \n * Regresa desde cualquier lugar a una estación de investigación por una acción \n \n * En lugar de ir a la ciudad que se muestra en la tarjeta descartada para un vuelo directo, puedes ir a cualquier ciudad de ese color</value>
+    <data name="Role_3" xml:space="preserve">
+        <value>Scientist (Original Game)</value>
     </data>
+    <data name="Role_4" xml:space="preserve">
+        <value>Researcher (Original Game)</value>
+    </data>
+    <data name="Role_5" xml:space="preserve">
+        <value>Operations Expert (Original Game)</value>
+    </data>
+    <data name="Role_6" xml:space="preserve">
+        <value>Containment Specialist (On The Brink)</value>
+    </data>
+    <data name="Role_7" xml:space="preserve">
+        <value>Generalist (On The Brink)</value>
+    </data>
+    <data name="Role_8" xml:space="preserve">
+        <value>Operations Expert Revised (On The Brink)</value>
+    </data>
+    <data name="Role_9" xml:space="preserve">
+        <value>Troubleshooter (On The Brink)</value>
+    </data>
+    <data name="Role_10" xml:space="preserve">
+        <value>Epidemiologist (On The Brink)</value>
+    </data>
+    <data name="Role_11" xml:space="preserve">
+        <value>Field Operative (On The Brink)</value>
+    </data>
+    <data name="Role_12" xml:space="preserve">
+        <value>Archivist (On The Brink)</value>
+    </data>
+    <data name="Role_13" xml:space="preserve">
+        <value>Containment Specialist</value>
+    </data>
+    <data name="Role_14" xml:space="preserve">
+        <value>Epidemiologist</value>
+    </data>
+    <data name="Role_15" xml:space="preserve">
+        <value>Remote Operations</value>
+    </data>
+    <data name="Role_16" xml:space="preserve">
+        <value>Genetic Engineer</value>
+    </data>
+    <data name="Role_17" xml:space="preserve">
+        <value>Prevention Specialist</value>
+    </data>
+    <data name="Role_18" xml:space="preserve">
+        <value>Pharmacologist</value>
+    </data>
+    <data name="Role_19" xml:space="preserve">
+        <value>Eradication Expert</value>
+    </data>
+    <data name="Role_20" xml:space="preserve">
+        <value>Administrator</value>
+    </data>
+    <data name="Role_21" xml:space="preserve">
+        <value>Public Relations Expert</value>
+    </data>
+    <data name="Role_22" xml:space="preserve">
+        <value>Rapid Responder</value>
+    </data>
+    <data name="Role_23" xml:space="preserve">
+        <value>Faith Healer</value>
+    </data>
+    <data name="Role_24" xml:space="preserve">
+        <value>Necrologist</value>
+    </data>
+    <data name="Role_25" xml:space="preserve">
+        <value>Microbiologist</value>
+    </data>
+    <data name="Role_26" xml:space="preserve">
+        <value>Technologist</value>
+    </data>
+    <data name="Role_27" xml:space="preserve">
+        <value>Superintendant</value>
+    </data>
+    <data name="Role_28" xml:space="preserve">
+        <value>Ground Pounder</value>
+    </data>
+    <data name="Role_29" xml:space="preserve">
+        <value>Curator</value>
+    </data>
+    <data name="Role_30" xml:space="preserve">
+        <value>Counter-Terrorist</value>
+    </data>
+    <data name="Role_31" xml:space="preserve">
+        <value>Pilot</value>
+    </data>
+    <data name="Role_32" xml:space="preserve">
+        <value>Field Researcher</value>
+    </data>
+    <data name="Role_33" xml:space="preserve">
+        <value>Jack of all Trades</value>
+    </data>
+    <data name="Role_34" xml:space="preserve">
+        <value>Supervisor</value>
+    </data>
+    <data name="Role_35" xml:space="preserve">
+        <value>Paramedic</value>
+    </data>
+    <data name="Role_36" xml:space="preserve">
+        <value>Microbiologist</value>
+    </data>
+    <data name="Role_37" xml:space="preserve">
+        <value>Aeromedical Pilot</value>
+    </data>
+    <data name="Role_38" xml:space="preserve">
+        <value>Epidemiologist</value>
+    </data>
+    <data name="Role_39" xml:space="preserve">
+        <value>Eradicator</value>
+    </data>
+    <data name="Role_40" xml:space="preserve">
+        <value>General Practitioner</value>
+    </data>
+    <data name="Role_41" xml:space="preserve">
+        <value>Faith Healer</value>
+    </data>
+    <data name="Role_42" xml:space="preserve">
+        <value>Local Expert</value>
+    </data>
+    <data name="Role_43" xml:space="preserve">
+        <value>Ground Command</value>
+    </data>
+    <data name="Role_44" xml:space="preserve">
+        <value>Smooth Operator</value>
+    </data>
+    <data name="Role_45" xml:space="preserve">
+        <value>Medical Journalist</value>
+    </data>
+    <data name="Role_46" xml:space="preserve">
+        <value>Emergency Responder</value>
+    </data>
+    <data name="Role_47" xml:space="preserve">
+        <value>MRS</value>
+    </data>
+    <data name="Role_48" xml:space="preserve">
+        <value>Crisis Manager </value>
+    </data>
+    <data name="Role_49" xml:space="preserve">
+        <value>Courier</value>
+    </data>
+    <data name="Role_50" xml:space="preserve">
+        <value>Hygienist</value>
+    </data>
+    <data name="Role_51" xml:space="preserve">
+        <value>Quarantine Specialist</value>
+    </data>
+    <data name="Role_52" xml:space="preserve">
+        <value>Quarantine Specialist</value>
+    </data>
+    <data name="Role_53" xml:space="preserve">
+        <value>Quarantine Specialist</value>
+    </data>
+    <data name="Role_54" xml:space="preserve">
+        <value>Quarantine Technician</value>
+    </data>
+    <data name="Role_55" xml:space="preserve">
+        <value>Pharmacist</value>
+    </data>
+    <data name="Role_56" xml:space="preserve">
+        <value>Pharmacist</value>
+    </data>
+    <data name="Role_57" xml:space="preserve">
+        <value>National Guardsman</value>
+    </data>
+    <data name="Role_58" xml:space="preserve">
+        <value>CIA Agent</value>
+    </data>
+    <data name="Role_59" xml:space="preserve">
+        <value>National Guardsman</value>
+    </data>
+    <data name="Role_60" xml:space="preserve">
+        <value>Humanitarian</value>
+    </data>
+    <data name="Role_61" xml:space="preserve">
+        <value>Field Operative II</value>
+    </data>
+    <data name="Role_62" xml:space="preserve">
+        <value>Librarian</value>
+    </data>
+    <data name="Role_63" xml:space="preserve">
+        <value>House, M.D.</value>
+    </data>
+    <data name="Role_64" xml:space="preserve">
+        <value>Exterminator</value>
+    </data>
+    <data name="Role_65" xml:space="preserve">
+        <value>Regional Liason</value>
+    </data>
+    <data name="Role_66" xml:space="preserve">
+        <value>Coordinator</value>
+    </data>
+    <data name="Role_67" xml:space="preserve">
+        <value>Field Scientist</value>
+    </data>
+    <data name="Role_68" xml:space="preserve">
+        <value>Rapid Response</value>
+    </data>
+    <data name="Role_69" xml:space="preserve">
+        <value>Observer</value>
+    </data>
+    <data name="Role_70" xml:space="preserve">
+        <value>Psychologist</value>
+    </data>
+    <data name="Role_71" xml:space="preserve">
+        <value>Virologist</value>
+    </data>
+    <data name="Role_72" xml:space="preserve">
+        <value>Dr. House, M.D.</value>
+    </data>
+    <data name="Role_73" xml:space="preserve">
+        <value>Medivac Pilot</value>
+    </data>
+    <data name="Role_74" xml:space="preserve">
+        <value>Pantologist</value>
+    </data>
+    <data name="Role_75" xml:space="preserve">
+        <value>Dr. Oeck</value>
+    </data>
+    <data name="Role_76" xml:space="preserve">
+        <value>Disease Specialist</value>
+    </data>
+    <data name="Role_77" xml:space="preserve">
+        <value>Apprentice</value>
+    </data>
+    <data name="Role_78" xml:space="preserve">
+        <value>Gambiteer</value>
+    </data>
+    <data name="Role_79" xml:space="preserve">
+        <value>WHO Executive</value>
+    </data>
+    <data name="Role_80" xml:space="preserve">
+        <value>Specialist Chief</value>
+    </data>
+    <data name="Role_81" xml:space="preserve">
+        <value>Microbiologist</value>
+    </data>
+    <data name="Role_82" xml:space="preserve">
+        <value>Epidemiologist</value>
+    </data>
+    <data name="Role_83" xml:space="preserve">
+        <value>Medic Alt 1</value>
+    </data>
+    <data name="Role_84" xml:space="preserve">
+        <value>Ops Expert Alt 1</value>
+    </data>
+    <data name="Role_85" xml:space="preserve">
+        <value>Researcher Alt 1</value>
+    </data>
+    <data name="Role_86" xml:space="preserve">
+        <value>Scientist Alt 1</value>
+    </data>
+    <data name="Role_87" xml:space="preserve">
+        <value>Dispatcher Alt 1</value>
+    </data>
+    <data name="Role_88" xml:space="preserve">
+        <value>Exporter</value>
+    </data>
+    <data name="Role_89" xml:space="preserve">
+        <value>Pilot</value>
+    </data>
+    <data name="Role_1_Description" xml:space="preserve">
+        <value>* Remove all cubes of a single color when you treat a city.\n\n * Administer known cures for free.</value>
+    </data>
+    <data name="Role_2_Description" xml:space="preserve">
+        <value>* Move your fellow players' pawns on your turn as if they were your own.\n\n * Move any pawn to another city containing a pawn for 1 action.</value>
+    </data>
+    <data name="Role_3_Description" xml:space="preserve">
+        <value>* You need only 4 cards of the same color to discover a cure.</value>
+    </data>
+    <data name="Role_4_Description" xml:space="preserve">
+        <value>* You may give a player cards from your hand for 1 action per card\n\n * Both of your pawns must be in the same city, but it doesn't matter which city you are in.</value>
+    </data>
+    <data name="Role_5_Description" xml:space="preserve">
+        <value>* You may build a research station in your current city for one action.</value>
+    </data>
+    <data name="Role_6_Description" xml:space="preserve">
+        <value>* When you enter a city with 2 or more cubes of the same color, remove 1 cube</value>
+    </data>
+    <data name="Role_7_Description" xml:space="preserve">
+        <value>* You get 5 actions to spend each turn</value>
+    </data>
+    <data name="Role_8_Description" xml:space="preserve">
+        <value>* You may build a Research Station in your current city for one action. \n\n * Once per turn at a Research Station you may spend an action and discard any city card to move to any city</value>
+    </data>
+    <data name="Role_9_Description" xml:space="preserve">
+        <value>* At your turn's start, peek at the number of cards on top of the Infection Draw Pile equal to the current infection rate. \n\n * When performing a Direct Flight action, you reveal but do not discard the card.</value>
+    </data>
+    <data name="Role_10_Description" xml:space="preserve">
+        <value>* Once per turn (on your turn only) you may spend an action to take a non-matching city card from a player whose pawn is in the city you are in.</value>
+    </data>
+    <data name="Role_11_Description" xml:space="preserve">
+        <value>* Once per turn you may spend an action to move 1 cube from your current city to your Role Card. You may Cure a Disease following normal rules but using only 3 cards plus 3 matching cubes from your Role Card.</value>
+    </data>
+    <data name="Role_12_Description" xml:space="preserve">
+        <value>* Your hand limit is 8 cards. \n\n * Once per turn, you may spend an action to draw your current city's card from the Player Discard Pile.</value>
+    </data>
+    <data name="Role_13_Description" xml:space="preserve">
+        <value>* Whenever you enter a city with 2 or more cubes of the same color, remove one cube for free.\n\n * The city you are currently in cannot outbreak, nor can cubes be added to it from adjacent cities outbreaking.</value>
+    </data>
+    <data name="Role_14_Description" xml:space="preserve">
+        <value>* You may take player cards from other player's hands for 1 action, regardless of which city you are in (both must still be in the same city).</value>
+    </data>
+    <data name="Role_15_Description" xml:space="preserve">
+        <value>* You may treat adjacent cities for one action.\n\n * Once per turn (on your turn only) you may spend one action to remove a cube from any city on the board.</value>
+    </data>
+    <data name="Role_16_Description" xml:space="preserve">
+        <value>* Following normal rules, you may discover a cure with only 4 cards of the same color. However, you must discard 2 additional city cards in order to do so.\n\n * You may discover a cure with only 3 cards of the same color. However, you must discard 4 additional city cards in order to do so.</value>
+    </data>
+    <data name="Role_17_Description" xml:space="preserve">
+        <value>* Whenever you enter a city with exactly one cube, remove it for free.\n\n * Ignore the effects of infection cards drawn of the city you are currently in (excluding epidemics).</value>
+    </data>
+    <data name="Role_18_Description" xml:space="preserve">
+        <value>* Whenever you administer known cures, remove all cubes of that color from all cities within 2 distance (all adjacent cities and all cities adjacent to those cities).</value>
+    </data>
+    <data name="Role_19_Description" xml:space="preserve">
+        <value>* When removing the last cube from a city that is in the infection discard pile, you may discard that city's card from your hand and place it next to the infection draw pile. Any infection card drawn of these cities has no effect.\n\n * Whenever you have purged more than 3 cities this way, you must pick one to place into the discard pile, removing its effect. The three currently active purged city cards cannot be retrieved in any other way.</value>
+    </data>
+    <data name="Role_20_Description" xml:space="preserve">
+        <value>* Special Events do not count towards your hand limit.\n\n * You may take (and others may give to you) their special event cards for free (both players must be in the same city).\n\n * For one action, you may discard three city cards to retrieve any special event card from the discard pile. One of these city cards must be your current location.</value>
+    </data>
+    <data name="Role_21_Description" xml:space="preserve">
+        <value>* Once per turn you may spend an action to draw your current city's card from the discard pile and give it to any other player.\n\n * Once per game while at a research station, you may spend an action to discard 3 cards of a color that has been eradicated to move the infection rate marker back one space.</value>
+    </data>
+    <data name="Role_22_Description" xml:space="preserve">
+        <value>* Whenever an Epidemic or Outbreak occurs, you may immediately move to that city.\n\n * When performing a Charter or Direct flight to a city with 3 cubes of the same color, you reveal but do not discard the card.</value>
+    </data>
+    <data name="Role_23_Description" xml:space="preserve">
+        <value>* When you treat disease, remove 1 additional cube of the same color from each adjacent city.\n\n * You gain no benefit from known cures.</value>
+    </data>
+    <data name="Role_24_Description" xml:space="preserve">
+        <value>* When in a city with 2 or more cubes, you may spend an action (on your turn only) to take cubes from the bank equal to the exact number and color of cubes in that city. You may only pull cubes out of the bank like this once per turn per city.\n\n * You may cure a disease following normal rules but you may substitute 2 cubes as if they were a matching colored city card (maximum 6 cubes per cure).</value>
+    </data>
+    <data name="Role_25_Description" xml:space="preserve">
+        <value>* Following normal rules, you may cure any disease with any 5 matching color city cards (the cards must all be the same color, but you may cure any disease).\n\n * Whenever you cure disease, you may keep one of the cards you would otherwise discard.</value>
+    </data>
+    <data name="Role_26_Description" xml:space="preserve">
+        <value>* Your pawn counts as a research station.\n\n * Whenever you give information to another player on your turn, take one card out of the discard pile of the same color and place it into your hand.</value>
+    </data>
+    <data name="Role_27_Description" xml:space="preserve">
+        <value>* Moving into the city you are currently in (by any means) does not cost other players actions.\n\n * One player of your choice that starts their turn in the same city as you gains 1 additional action (declare this player at the end of your turn).</value>
+    </data>
+    <data name="Role_28_Description" xml:space="preserve">
+        <value>* Other players may move your pawn as if it were their own.\n\n * You may drive/ferry twice for one action, so long as the cities you start in and pass through have no cubes (the city you end up on may have cubes).</value>
+    </data>
+    <data name="Role_29_Description" xml:space="preserve">
+        <value>* Your hand limit is 9 cards.</value>
+    </data>
+    <data name="Role_30_Description" xml:space="preserve">
+        <value>* Bio-Terrorist Variant Only: At the start of your turn, you may declare one city. The bio-terrorist must reveal if he is currently in that city, or if he has been there in his last turn. Capturing the Bio-Terrorist costs you no actions and prevents him from taking any actions at the end of your turn.\n\n * Without Bio-Terrorist Variant Only: At the start of your infection phase, peek at all the cards that will be played and choose one to discard. This card will have no effect.</value>
+    </data>
+    <data name="Role_31_Description" xml:space="preserve">
+        <value>* When performing a charter flight action, you reveal but do not discard the card.\n\n * When performing a direct flight or charter flight action, you may take any or all player tokens at your location with you to the destination.</value>
+    </data>
+    <data name="Role_32_Description" xml:space="preserve">
+        <value>* You do not need to be at a research station to discover cures.\n\n * When you draw player cards, peek at the top 3 and take 2 of your choice. If one of or both of the top two cards are epidemics, you must take them.</value>
+    </data>
+    <data name="Role_33_Description" xml:space="preserve">
+        <value>* When you are dealt this role, immediately draw three role cards.\n\n * At the start of each of your turns, pick one of these role cards to put on top of this one. You will have all of the benefits of that role until you should decide to change to another of these roles at the start of one of your turns.\n\n * You have one less action per turn.</value>
+    </data>
+    <data name="Role_34_Description" xml:space="preserve">
+        <value>* At the beginning of your turn, look at the three first cards of the Player deck, then place them back in the same order.\n\n * Whenever you should draw a Player card, you may take it from the bottom of the Player deck instead.</value>
+    </data>
+    <data name="Role_35_Description" xml:space="preserve">
+        <value>* Whenever a player discards cards to Discover a Cure, you can put the cards in your hand instead of the discard pile.\n\n * As an action, you can discard a City card to remove a cube of this card’s color from your current city and from each adjacent city.</value>
+    </data>
+    <data name="Role_36_Description" xml:space="preserve">
+        <value>* Whenever you discard a City card, you may remove up to two cubes from that city.\n\n * You may Discover a Cure following normal rules, but discarding 3 City cards of the cure’s color plus any 4 other cards.</value>
+    </data>
+    <data name="Role_37_Description" xml:space="preserve">
+        <value>* Whenever you leave a city, any other players whose pawn is currently in this city may follow you immediately to your destination.\n\n * When you enter a city with exactly one cube, remove that cube.</value>
+    </data>
+    <data name="Role_38_Description" xml:space="preserve">
+        <value>* You may spend an action and discard any city card to move to a city with a research station.\n\n * Once during your turn, you may spend an action to take a non-matching city card from a player whose pawn is in the city you are in.</value>
+    </data>
+    <data name="Role_39_Description" xml:space="preserve">
+        <value>* If he is in, or enters a city containing two or three cubes of the same colour he MUST remove all of those cubes.\n\n * This costs no action points.\n\n * However, only one cube goes back into the supply and the other cubes are removed from the game.\n\n * The Eradicator may only hold a maximum of five cards at any time.</value>
+    </data>
+    <data name="Role_40_Description" xml:space="preserve">
+        <value>*  The G.P. only gets 3 Actions.\n\n *  The G.P. can only travel by driving, or by ferry (no flight).\n\n *  Once during the G.P.'s turn, she may swap any card in her hand with the top card of the player discard pile, if it's a city card. This requires one Action. If the top card is an Epidemic or Special Event then she may not use this ability.</value>
+    </data>
+    <data name="Role_41_Description" xml:space="preserve">
+        <value>* Can't treat disease until the cure has been found.\n\n * Once per turn, the Faith Healer can use an action to change ONE disease cube in his current city to a cube of another colour.</value>
+    </data>
+    <data name="Role_42_Description" xml:space="preserve">
+        <value>* Can't build Research Stations.\n\n * Can only cure disease at a research station in a city of corresponding colour. (For example, to cure the blue disease the Local Expert needs to hand in 5 blue cards at a research station in a blue city.)</value>
+    </data>
+    <data name="Role_43_Description" xml:space="preserve">
+        <value>* Can only treat diseases in Adjacent cities.\n\n * Must be in an Uninfected city to issue commands. (For example, if Ground Command is in Atlanta and it is infected he can't treat it. He must move to an Uninfected and Adjacent city to treat Atlanta (and/or any other Infected Adjacent city.)</value>
+    </data>
+    <data name="Role_44_Description" xml:space="preserve">
+        <value>* Gets 2 extra Basic Actions.\n\n * Only draws 1 player card per turn.</value>
+    </data>
+    <data name="Role_45_Description" xml:space="preserve">
+        <value>* Whenever an Epidemic occurs, you must immediately place the Medical Journalist in that city (Does not require an action.)\n\n * May take ONE city card per turn from another player, IF that player is in a city of the same colour as the city the Medical Journalist is in. (Uses one action.)</value>
+    </data>
+    <data name="Role_46_Description" xml:space="preserve">
+        <value>* For 1 action, you may spend any city card to fly to a city which has 3 matching disease cubes.\n\n * For 1 action, you may treat a city that is neighbouring your current city. ie. you don't have to travel to the neighbouring city to cure it. an example would be treating New York while standing in Toronto.</value>
+    </data>
+    <data name="Role_47_Description" xml:space="preserve">
+        <value>* Your pawn counts as a research station</value>
+    </data>
+    <data name="Role_48_Description" xml:space="preserve">
+        <value>* At the end of your turn, draw 3 cards from the player deck and choose 1 to place at the bottom of the deck.\n\n * If you draw an Epidemic, it must be one of the cards you keep</value>
+    </data>
+    <data name="Role_49_Description" xml:space="preserve">
+        <value>* You are unable to use the Treat Disease action, but can Charter Flight by discarding a city card of any color.</value>
+    </data>
+    <data name="Role_50_Description" xml:space="preserve">
+        <value>* When you use the Treat Disease action, take an additional cube off after the Infector phase (two additional cubes max).</value>
+    </data>
+    <data name="Role_51_Description" xml:space="preserve">
+        <value>* When an Outbreak occurs, the Quarantine Specialist may discard any two city cards of the color corresponding to where the Outbreak occurred. The Quarantine Specialist then Direct Flies to that Outbreak location. This may be used on any player's turn.</value>
+    </data>
+    <data name="Role_52_Description" xml:space="preserve">
+        <value>* During the Quarantine Specialist's turn, the infection rate is treated as being one less than the current infection rate. </value>
+    </data>
+    <data name="Role_53_Description" xml:space="preserve">
+        <value>* Once per turn you may spend an action to remove one disease cube from any city who's card is in the infection discard pile.</value>
+    </data>
+    <data name="Role_54_Description" xml:space="preserve">
+        <value>* The city you are in and the citys that connect to it can not outbreak.</value>
+    </data>
+    <data name="Role_55_Description" xml:space="preserve">
+        <value>* May spend one action to remove all the cubes of a cured disease from your current location and all neighboring locations.</value>
+    </data>
+    <data name="Role_56_Description" xml:space="preserve">
+        <value>* When you enter a city with exactly one cube, remove it for free.\n\n * You may spend one action to remove all the cubes of a cured disease from your current location and all neighboring locations.</value>
+    </data>
+    <data name="Role_57_Description" xml:space="preserve">
+        <value>* Once per turn you can \"quarantine\" the city you are in. This removes all the cubes in the city. It prevents outbreaks or new infection until it is your turn again.</value>
+    </data>
+    <data name="Role_58_Description" xml:space="preserve">
+        <value>* Move to city where terrorist was last sighted for one action.\n\n * If agent captures terrorist, terrorist cannot draw for one turn, and agent can cure purple strain for one less card. Having a card with a city with a purple cube still required. </value>
+    </data>
+    <data name="Role_59_Description" xml:space="preserve">
+        <value>* Prevents outbreak in current city. (Cannot treat disease)\n\n * Prevents bio-terrorist from drawing cards for two turns when captured by Guardsman.</value>
+    </data>
+    <data name="Role_60_Description" xml:space="preserve">
+        <value>* Discard a card to travel to a city with three cubes and set up a temporary research station.(Research station is removed when the humanitarian leaves the region. Blue, Red, Yellow, Black Region)\n\n * Once during the infection phase may move to a city that has had an outbreak and remove a cube.</value>
+    </data>
+    <data name="Role_61_Description" xml:space="preserve">
+        <value>* Once per turn you may spend an action to move 1 cube from your current city to your Role Card\n\n * You may Cure a Disease following normal rules but using only 3 cards plus 3 matching cubes from your Role Card.\n\n * You may Cure a Disease with another player at the same research station who has 3 cards matching cubes from your Role Card.</value>
+    </data>
+    <data name="Role_62_Description" xml:space="preserve">
+        <value>* Unlimited hand size;\n\n * Can Share Knowledge (give or receive) provided it is in a city of the same colour as the cards being transfered;</value>
+    </data>
+    <data name="Role_63_Description" xml:space="preserve">
+        <value>* House has a number of actions equal to the number of Outbreaks plus 2\n\n * House has a maximum hand size of 10</value>
+    </data>
+    <data name="Role_64_Description" xml:space="preserve">
+        <value>* For 4 actions you can destroy one cube of the same color in the current city and in each of all adjacent cities</value>
+    </data>
+    <data name="Role_65_Description" xml:space="preserve">
+        <value>* You can move, for one action, to any city of the same color</value>
+    </data>
+    <data name="Role_66_Description" xml:space="preserve">
+        <value>* Play a city card of your location and you may return the bottom 2 discarded city cards to the bottom of the city deck</value>
+    </data>
+    <data name="Role_67_Description" xml:space="preserve">
+        <value>* You can cure a disease with 5 cards anywhere. You don't have to be at a research station.</value>
+    </data>
+    <data name="Role_68_Description" xml:space="preserve">
+        <value>* No infections or epidemics can begin in your city or an adjacent city of the same color</value>
+    </data>
+    <data name="Role_69_Description" xml:space="preserve">
+        <value>* You can spend one action to place the card in the corresponding city when you stay or pass by this city\n\n * Other players can take the card when they stay or pass by the city without spending an action</value>
+    </data>
+    <data name="Role_70_Description" xml:space="preserve">
+        <value>* Other pawns can obtain one more action in their turns by stopping or passing by the city you stayed\n\n * Other pawns cannot obtain one or more action if they start their turns in the city you stayed\n\n * You are immune to mental institution</value>
+    </data>
+    <data name="Role_71_Description" xml:space="preserve">
+        <value>* After treating a disease, you can spend one action to collect the cube or not\n\n * You can collect only one cube in each turn\n\n * After collecting 5 cubes of the same color, you can discover a cure of this color in the station</value>
+    </data>
+    <data name="Role_72_Description" xml:space="preserve">
+        <value>* Once per game, after the Third Epidemic, House can pull a cure out of his ass at the last second. Cure any one disease for free.\n\n * He only gets 3 actions per turn due to his limp\n\n * Anytime he begins his move with in a city with another playing piece he only gets one action as the other three are spent belittling the other  player for not thinking outside the box\n\n * He can't trade cards with other players either. Not exactly a \"team player.\"</value>
+    </data>
+    <data name="Role_73_Description" xml:space="preserve">
+        <value>* May move up to 4 spaces er action, but may not use other regular movement\n\n * May bring along a player from the same starting space to the end of the move, with that player's permission\n\n * May only take the \"treat disease\" action at the dn of a move, and may not treat again until moved again\n\n * May not build research stations</value>
+    </data>
+    <data name="Role_74_Description" xml:space="preserve">
+        <value>* You may use an action to trade roles with any other player in the game (except the Bio-Terrorist)\n\n * Take your role back at the end of your turn.</value>
+    </data>
+    <data name="Role_75_Description" xml:space="preserve">
+        <value>* Can stop in a city of choice when taking a direct flight and cure one cube for free.</value>
+    </data>
+    <data name="Role_76_Description" xml:space="preserve">
+        <value>* Once on your turn, if you currently have no disease cube on your card: instead of treating a disease cube put the disease cube on your card. As long as this cube remains on your card you function as a Scientist and a Medic for this disease\n\n * You may only remove a disease cube on your card when the corresponding disease has been eradicated.</value>
+    </data>
+    <data name="Role_77_Description" xml:space="preserve">
+        <value>* At the beginning of your turn if you are in a city that other players occupy you may select one of their roles. During that turn you function as that role. You lose any passive role effects after your turn ends.\n\n * You may travel from an existing research station to another for free</value>
+    </data>
+    <data name="Role_78_Description" xml:space="preserve">
+        <value>* After drawing (and discarding if necc.) your cards at the end of your turn you may do the following before the infection phase: draw one card from the bottom of the infection deck and compare its color to the color of the top card on the infection card discard pile.  If the colors do not match reduce the infection rate by 1. If if at least one of the colors is for a cured disease reduce it by 2. If the colors match then put 2 disease cubes on each of the cities and play the infection phase normally.  If one of the colors is for an eradicated disease then change the status to cured.</value>
+    </data>
+    <data name="Role_79_Description" xml:space="preserve">
+        <value>* The Executive can use an action to discard a Player Card from her hand and move the Infection Card of the same city from the Infection Discard Pile into the Infection Draw Pile (neither at the top, not at the bottom)</value>
+    </data>
+    <data name="Role_80_Description" xml:space="preserve">
+        <value>* Each turn you may assume an unused role. You may assume each role only once. (Field Operative and Bio-Terrorist may not be selected.)</value>
+    </data>
+    <data name="Role_81_Description" xml:space="preserve">
+        <value>* Draw 3 player cards and pick 2 to keep. Return the unwanted one to the top of the Player Draw Pile. You MUST play an Epidemic card if drawn which counts as 1 of your 2 cards. </value>
+    </data>
+    <data name="Role_82_Description" xml:space="preserve">
+        <value>* You may draw fewer Infection cards during your turn at a cost of 1 action per card.</value>
+    </data>
+    <data name="Role_83_Description" xml:space="preserve">
+        <value>* Remove one disease cube upon leaving a city.\n\n * Remove all cubes of cured diseases upon leaving a city.</value>
+    </data>
+    <data name="Role_84_Description" xml:space="preserve">
+        <value>* Does not have to be in the target city to build a Research Station.</value>
+    </data>
+    <data name="Role_85_Description" xml:space="preserve">
+        <value>* May exchange one card of a color for another player's card, while in a city of that color with that player's pawn. (Either player may initiate this action.)</value>
+    </data>
+    <data name="Role_86_Description" xml:space="preserve">
+        <value>* May discard 4 cards of a color to build a Research Station and cure the disease of that color.\n\n * Must be in a city of that color without a Research Station.</value>
+    </data>
+    <data name="Role_87_Description" xml:space="preserve">
+        <value>* May move up to two cities in one action.\n\n * May spend an action to swap the locations of two pawns.</value>
+    </data>
+    <data name="Role_88_Description" xml:space="preserve">
+        <value>* Can treat disease from a city that is one space away from his location.</value>
+    </data>
+    <data name="Role_89_Description" xml:space="preserve">
+        <value>* Carries others\n\n * Returns from anywhere to a research station for one action\n\n * Instead of going to the city pictured on the card discarded for a direct flight, you can go to any city of that color</value>
+    </data>    
 </root>
