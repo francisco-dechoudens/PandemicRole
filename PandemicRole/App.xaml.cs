@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using PandemicRole.Views;
 
 namespace PandemicRole
 {
@@ -10,7 +11,7 @@ namespace PandemicRole
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new SelectedRolePage();
         }
 
         protected override void OnStart()

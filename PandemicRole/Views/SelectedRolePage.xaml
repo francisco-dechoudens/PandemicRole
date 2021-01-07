@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PandemicRole.Views.SelectedRolePage"
+             xmlns:resources="clr-namespace:PandemicRole.Infrastructure.Globalization"
+             >
+    <ContentPage.Content>
+        <!--<Grid Padding="0">
+            <Image
+                x:Name="background_img"
+                Aspect="AspectFill"
+                RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            </Image>
+        </Grid>-->
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout BackgroundColor="DarkSlateBlue" Grid.Row="0">
+                <Label Text="{x:Static resources:Localization.Role_Scientist}"
+                       Padding="0,70,0,30"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"></Label>
+            </StackLayout>
+            <StackLayout BackgroundColor="Black" Grid.Row="1">
+                <Label Text="Role Description"
+                       FontSize="Medium" 
+                       Padding="0,50,0,30"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"></Label>
+                <Label Text="{x:Static resources:Localization.Role_Scientist_Description}"
+                       FontSize="Large"
+                       Padding="10"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"></Label>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
