@@ -25,6 +25,8 @@ namespace PandemicRole.ViewModels
                     this.roles.Add(r.Value.ToString());
                 }
             }
+
+            this.roles.Sort();
         }
 
         private List<string> roles;
