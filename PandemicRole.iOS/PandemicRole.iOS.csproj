@@ -133,12 +133,4 @@
       <Name>PandemicRole</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\bg%403x.png" />
-    <BundleResource Include="Resources\bg%402x.png" />
-    <BundleResource Include="Resources\bg.png" />
-    <BundleResource Include="Resources\bg-portrait.png" />
-    <BundleResource Include="Resources\bg-portrait%402x.png" />
-    <BundleResource Include="Resources\bg-portrait%403x.png" />
-  </ItemGroup>
 </Project>
