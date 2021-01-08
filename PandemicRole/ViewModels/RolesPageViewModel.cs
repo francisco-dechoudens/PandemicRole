@@ -15,8 +15,6 @@ namespace PandemicRole.ViewModels
 
             var rm = new ResourceManager("PandemicRole.Infrastructure.Globalization.Localization", Assembly.GetExecutingAssembly());
 
-          
-
             foreach (var resource in rm.GetResourceSet(CultureInfo.CurrentCulture, true, true))
             {
                 var r = (System.Collections.DictionaryEntry)resource;
@@ -32,21 +30,9 @@ namespace PandemicRole.ViewModels
         private List<string> roles;
         public List<string> Roles
         {
-            get
-            {
-                return this.roles;
-            }
-
-            set
-            {
-                if (this.roles == value)
-                {
-                    return;
-                }
-
-                this.roles = value;
-                this.NotifyPropertyChanged();
-            }
+            get => roles;
+            set => SetValue(ref roles, value, nameof(Roles));
         }
+
     }
 }
