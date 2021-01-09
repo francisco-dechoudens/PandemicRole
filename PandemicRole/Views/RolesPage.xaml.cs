@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using PandemicRole.ViewModels;
 using Xamarin.Forms;
 
 namespace PandemicRole.Views
@@ -10,6 +10,7 @@ namespace PandemicRole.Views
         public RolesPage()
         {
             InitializeComponent();
+            BindingContext = new RolesPageViewModel(Navigation);
         }
     }
 }

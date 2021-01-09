@@ -4,10 +4,9 @@
              x:Class="PandemicRole.Views.SelectedRolePage"
              xmlns:resources="clr-namespace:PandemicRole.Infrastructure.Globalization"
              xmlns:viewModel="clr-namespace:PandemicRole.ViewModels"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black"
              >
-    <ContentPage.BindingContext>
-        <viewModel:SelectedRolePageViewModel/>
-    </ContentPage.BindingContext>
     <ContentPage.Content>
         <!--<Grid Padding="0">
             <Image
@@ -21,6 +20,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <StackLayout BackgroundColor="DarkSlateBlue" Grid.Row="0">
                 <Label Text="{Binding Role}"
@@ -30,17 +30,27 @@
                        HorizontalTextAlignment="Center"
                        TextColor="White"></Label>
             </StackLayout>
-            <StackLayout BackgroundColor="Black" Grid.Row="1">
-                <Label Text="Role Description"
-                       FontSize="Medium" 
-                       Padding="0,50,0,30"
-                       HorizontalTextAlignment="Center"
-                       TextColor="White"></Label>
-                <Label Text="{Binding RoleDescription}"
-                       FontSize="Large"
-                       Padding="10" TextType="Text"
-                       HorizontalTextAlignment="Center"
-                       TextColor="White"></Label>
+            <ScrollView Grid.Row="1">
+                <StackLayout>   
+                    <Label Text="Role Description"
+                           FontSize="Medium" 
+                           Padding="0,50,0,30"
+                           HorizontalTextAlignment="Center"
+                           TextColor="White"></Label>
+                    <Label Text="{Binding RoleDescription}"
+                           FontSize="Large"
+                           Padding="10" TextType="Text"
+                           HorizontalTextAlignment="Center"
+                           TextColor="White"></Label>
+                </StackLayout>
+            </ScrollView>
+            <StackLayout HeightRequest="50" Grid.Row="2" Padding="50,0,50,20">
+                <Button Text="Change Role"
+                        TextColor="White"
+                        BorderColor="White"
+                        BackgroundColor="Transparent"
+                        Command="{Binding GoBackCommand}"
+                        BorderWidth="2"></Button>
             </StackLayout>
         </Grid>
     </ContentPage.Content>

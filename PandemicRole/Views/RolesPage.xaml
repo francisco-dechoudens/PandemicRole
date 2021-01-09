@@ -2,10 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PandemicRole.Views.RolesPage"
-             xmlns:viewModel="clr-namespace:PandemicRole.ViewModels">
-    <ContentPage.BindingContext>
-        <viewModel:RolesPageViewModel/>
-    </ContentPage.BindingContext>
+             xmlns:viewModel="clr-namespace:PandemicRole.ViewModels"
+             xmlns:behaviors="clr-namespace:PandemicRole.Behaviors"
+             xmlns:converters="clr-namespace:PandemicRole.Converters"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <ListView ItemsSource="{Binding Roles}"
                   HasUnevenRows="True"
@@ -29,6 +34,11 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
+            <ListView.Behaviors>
+                <behaviors:EventToCommandBehavior EventName="ItemSelected"
+                                                  Command="{Binding RoleSelectedCommand}"
+                                                  Converter="{StaticResource SelectedItemConverter}" />
+            </ListView.Behaviors>
         </ListView>
     </ContentPage.Content>
 </ContentPage>
