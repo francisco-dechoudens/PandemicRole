@@ -6,13 +6,15 @@
              BackgroundColor="Black">
     <ContentPage.Content>
         <StackLayout Padding="50">
-            <Button VerticalOptions="CenterAndExpand"
+            <Image Source="logo.png" VerticalOptions="EndAndExpand"></Image>
+
+            <Button VerticalOptions="EndAndExpand"
                     BorderColor="White"
                     BorderWidth="2"
                     TextColor="White"
                     Command="{Binding SelectRoleCommand}"
                     Text="Select Role"></Button>
-            <Button VerticalOptions="CenterAndExpand"
+            <Button VerticalOptions="StartAndExpand"
                     BorderColor="White"
                     BorderWidth="2"
                     TextColor="White"

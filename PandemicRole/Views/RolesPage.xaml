@@ -6,6 +6,7 @@
              xmlns:behaviors="clr-namespace:PandemicRole.Behaviors"
              xmlns:converters="clr-namespace:PandemicRole.Converters"
              NavigationPage.HasNavigationBar="True"
+             Title="Roles"
              >
     <ContentPage.Resources>
         <ResourceDictionary>
