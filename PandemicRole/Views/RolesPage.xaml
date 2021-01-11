@@ -15,6 +15,7 @@
         <ListView ItemsSource="{Binding Roles}"
                   HasUnevenRows="True"
                   BackgroundColor="#2e2d2d"
+                  SelectedItem="{Binding SelectedRole}"
                   SeparatorVisibility="None">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -29,7 +30,7 @@
                                        FontSize="Large"
                                        VerticalOptions="CenterAndExpand"
                                        HorizontalTextAlignment="Center"
-                                       Text="{Binding}"/>
+                                       Text="{Binding RoleName}"/>
                             </StackLayout>
                     </ViewCell>
                 </DataTemplate>

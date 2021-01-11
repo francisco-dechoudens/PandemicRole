@@ -23,7 +23,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <StackLayout BackgroundColor="DarkSlateBlue" Grid.Row="0">
-                <Label Text="{Binding Role}"
+                <Label Text="{Binding Role.RoleName}"
                        Padding="0,70,0,30"
                        FontSize="24"
                        FontAttributes="Bold"
@@ -37,7 +37,7 @@
                            Padding="0,50,0,30"
                            HorizontalTextAlignment="Center"
                            TextColor="White"></Label>
-                    <Label Text="{Binding RoleDescription}"
+                    <Label Text="{Binding Role.RoleDescription}"
                            FontSize="Large"
                            Padding="10" TextType="Text"
                            HorizontalTextAlignment="Center"

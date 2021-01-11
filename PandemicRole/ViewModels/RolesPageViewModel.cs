@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Reflection;
 using System.Resources;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using PandemicRole.Models;
 using PandemicRole.Views;
 using Xamarin.Forms;
 
@@ -15,17 +17,24 @@ namespace PandemicRole.ViewModels
     {
         public INavigation Navigation { get; set; }
 
-        private List<string> roles;
-        public List<string> Roles
+        private List<RoleModel> roles;
+        public List<RoleModel> Roles
         {
             get => roles;
             set => SetValue(ref roles, value, nameof(Roles));
         }
 
+        private RoleModel selectedRole;
+        public RoleModel SelectedRole
+        {
+            get => selectedRole;
+            set => SetValue(ref selectedRole, value, nameof(SelectedRole));
+        }
+
         public RolesPageViewModel(INavigation navigation)
         {
             this.Navigation = navigation;
-            roles = new List<string>();
+            roles = new List<RoleModel>();
 
             var rm = new ResourceManager("PandemicRole.Infrastructure.Globalization.Localization", Assembly.GetExecutingAssembly());
 
@@ -34,21 +43,24 @@ namespace PandemicRole.ViewModels
                 var r = (System.Collections.DictionaryEntry)resource;
                 if (Regex.IsMatch(r.Key.ToString(), @"^Role_.*\d$"))
                 {
-                    roles.Add(r.Value.ToString());
+                    roles.Add(new RoleModel(){
+                        RoleKey = r.Key.ToString(),
+                        RoleName = r.Value.ToString()
+                    });;
                 }
             }
 
-            roles.Sort();
+            roles = roles.OrderBy(r => r.RoleName).ToList();
 
-            RoleSelectedCommand = new Command<string>(this.RoleSelected);
+            RoleSelectedCommand = new Command(this.RoleSelected);
         }
 
         public ICommand RoleSelectedCommand { get; private set; }
 
-        private async void RoleSelected(string role)
+        private async void RoleSelected()
         {
             var detailPage = new SelectedRolePage();
-            detailPage.BindingContext = new SelectedRolePageViewModel(this.Navigation);
+            detailPage.BindingContext = new SelectedRolePageViewModel(this.Navigation, SelectedRole);
 
             await this.Navigation.PushAsync(detailPage);
         }

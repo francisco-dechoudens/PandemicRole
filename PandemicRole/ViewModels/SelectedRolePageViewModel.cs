@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Resources;
 using System.Windows.Input;
 using PandemicRole.Infrastructure.Globalization;
+using PandemicRole.Models;
 using Xamarin.Forms;
 
 namespace PandemicRole.ViewModels
@@ -14,15 +15,25 @@ namespace PandemicRole.ViewModels
         public INavigation Navigation { get; set; }
         private readonly Random _random = new Random();
 
-        public SelectedRolePageViewModel(INavigation navigation)
+        public SelectedRolePageViewModel(INavigation navigation, RoleModel roleModel)
         {
             Navigation = navigation;
 
             var rm = new ResourceManager("PandemicRole.Infrastructure.Globalization.Localization", Assembly.GetExecutingAssembly());
-
-            var number =_random.Next(1,89);
-            role = rm.GetString($"Role_{number}");
-            roleDescription= rm.GetString($"Role_{number}_Description").Replace("\\n", Environment.NewLine);
+            if (roleModel == null)
+            {
+                var number = _random.Next(1, 89);
+                Role = new RoleModel()
+                {
+                    RoleKey = $"Role_{number}",
+                    RoleName = rm.GetString($"Role_{number}"),
+                    RoleDescription = rm.GetString($"Role_{number}_Description").Replace("\\n", Environment.NewLine)
+                };
+            }
+            else {
+                roleModel.RoleDescription = rm.GetString($"{roleModel.RoleKey}_Description").Replace("\\n", Environment.NewLine);
+                Role = roleModel;
+            }
 
 
             GoBackCommand = new Command(this.GoBack);
@@ -43,44 +54,11 @@ namespace PandemicRole.ViewModels
             await this.Navigation.PopAsync();
         }
 
-        private string role;
-        public string Role
+        private RoleModel role;
+        public RoleModel Role
         {
-            get
-            {
-                return this.role;
-            }
-
-            set
-            {
-                if (this.role == value)
-                {
-                    return;
-                }
-
-                this.role = value;
-                this.NotifyPropertyChanged();
-            }
-        }
-
-        private string roleDescription;
-        public string RoleDescription
-        {
-            get
-            {
-                return this.roleDescription;
-            }
-
-            set
-            {
-                if (this.roleDescription == value)
-                {
-                    return;
-                }
-
-                this.roleDescription = value;
-                this.NotifyPropertyChanged();
-            }
+            get => role;
+            set => SetValue(ref role, value, nameof(Role));
         }
     }
 }
