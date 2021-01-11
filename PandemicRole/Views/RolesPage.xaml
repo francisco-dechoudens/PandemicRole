@@ -25,7 +25,7 @@
                           <StackLayout
                               Margin="5,5"
                               HeightRequest="100" >
-                                  <Frame VerticalOptions="FillAndExpand" HasShadow="False" BackgroundColor="#0FFFFFFF" >
+                                  <Frame VerticalOptions="FillAndExpand" HasShadow="False" BackgroundColor="#19FFFFFF" >
                                     <Label TextColor="White"
                                            FontSize="Large"
                                            VerticalOptions="CenterAndExpand"
