@@ -5,7 +5,8 @@
              xmlns:viewModel="clr-namespace:PandemicRole.ViewModels"
              xmlns:behaviors="clr-namespace:PandemicRole.Behaviors"
              xmlns:converters="clr-namespace:PandemicRole.Converters"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="True"
+             >
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemConverter" />
@@ -14,7 +15,7 @@
     <ContentPage.Content>
         <ListView ItemsSource="{Binding Roles}"
                   HasUnevenRows="True"
-                  BackgroundColor="#2e2d2d"
+                  BackgroundColor="Black"
                   SelectedItem="{Binding SelectedRole}"
                   SeparatorVisibility="None">
             <ListView.ItemTemplate>

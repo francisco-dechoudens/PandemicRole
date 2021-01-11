@@ -11,7 +11,7 @@ namespace PandemicRole
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new RolesPage());
+            MainPage = new NavigationPage(new HomePage());
         }
 
         protected override void OnStart()

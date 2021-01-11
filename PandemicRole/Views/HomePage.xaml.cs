@@ -5,11 +5,12 @@ using Xamarin.Forms;
 
 namespace PandemicRole.Views
 {
-    public partial class RolesPage : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public RolesPage()
+        public HomePage()
         {
             InitializeComponent();
+            BindingContext = new HomePageViewModel(Navigation);
         }
     }
 }
