@@ -14,7 +14,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ListView ItemsSource="{Binding Roles}"
+        <ListView ItemsSource="{Binding Roles}" CachingStrategy="RecycleElementAndDataTemplate"
                   HasUnevenRows="True"
                   BackgroundColor="Black"
                   SelectedItem="{Binding SelectedRole}"
@@ -23,16 +23,15 @@
                 <DataTemplate>
                     <ViewCell>
                           <StackLayout
-                              Padding="2"
                               Margin="5,5"
-                              HeightRequest="100"
-                              BackgroundColor="DodgerBlue"
-                              Orientation="Vertical">
-                                <Label TextColor="White"
-                                       FontSize="Large"
-                                       VerticalOptions="CenterAndExpand"
-                                       HorizontalTextAlignment="Center"
-                                       Text="{Binding RoleName}"/>
+                              HeightRequest="100" >
+                                  <Frame VerticalOptions="FillAndExpand" HasShadow="False" BackgroundColor="#0FFFFFFF" >
+                                    <Label TextColor="White"
+                                           FontSize="Large"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalTextAlignment="Center"
+                                           Text="{Binding RoleName}"/>
+                                  </Frame>
                             </StackLayout>
                     </ViewCell>
                 </DataTemplate>
