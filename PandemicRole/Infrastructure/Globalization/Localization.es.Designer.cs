@@ -581,6 +581,12 @@ namespace PandemicRole.Infrastructure.Globalization {
             }
         }
         
+        internal static string Role_90 {
+            get {
+                return ResourceManager.GetString("Role_90", resourceCulture);
+            }
+        }
+        
         internal static string Role_1_Description {
             get {
                 return ResourceManager.GetString("Role_1_Description", resourceCulture);
@@ -1112,6 +1118,12 @@ namespace PandemicRole.Infrastructure.Globalization {
         internal static string Role_89_Description {
             get {
                 return ResourceManager.GetString("Role_89_Description", resourceCulture);
+            }
+        }
+        
+        internal static string Role_90_Description {
+            get {
+                return ResourceManager.GetString("Role_90_Description", resourceCulture);
             }
         }
     }

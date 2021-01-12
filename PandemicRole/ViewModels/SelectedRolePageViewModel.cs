@@ -31,6 +31,7 @@ namespace PandemicRole.ViewModels
                 };
             }
             else {
+                roleModel.RoleName = rm.GetString($"{roleModel.RoleKey}");
                 roleModel.RoleDescription = rm.GetString($"{roleModel.RoleKey}_Description").Replace("\\n", Environment.NewLine);
                 Role = roleModel;
             }

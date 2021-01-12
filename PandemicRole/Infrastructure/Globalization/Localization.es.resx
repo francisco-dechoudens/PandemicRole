@@ -279,6 +279,9 @@
     <data name="Role_89" xml:space="preserve">
         <value>Pilot</value>
     </data>
+    <data name="Role_90" xml:space="preserve">
+        <value>Blisher (Pipeline)</value>
+    </data>    
     <data name="Role_1_Description" xml:space="preserve">
         <value>* Remove all cubes of a single color when you treat a city.\n\n * Administer known cures for free.</value>
     </data>
@@ -545,5 +548,8 @@
     </data>
     <data name="Role_89_Description" xml:space="preserve">
         <value>* Carries others\n\n * Returns from anywhere to a research station for one action\n\n * Instead of going to the city pictured on the card discarded for a direct flight, you can go to any city of that color</value>
+    </data>    
+    <data name="Role_90_Description" xml:space="preserve">
+        <value>* At the start of your turn, arrange your city cards in a queue.\n\n * Once per turn you can use an action to move according to the color patterns on the city cards.</value>
     </data>    
 </root>

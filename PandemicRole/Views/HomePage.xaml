@@ -14,12 +14,20 @@
                     TextColor="White"
                     Command="{Binding SelectRoleCommand}"
                     Text="Select Role"></Button>
-            <Button VerticalOptions="StartAndExpand"
-                    BorderColor="White"
+            <Button BorderColor="White"
                     BorderWidth="2"
                     TextColor="White"
                     Command="{Binding RandomRoleCommand}"
                     Text="Random Role"></Button>
+            <Button VerticalOptions="StartAndExpand"
+                    BorderColor="White"
+                    BorderWidth="2"
+                    TextColor="White"
+                    Command="{Binding BlisherSelectedCommand}"
+                    Text="Play as Blisher"></Button>
+            <Label Text="*Blisher is a fan-made role created by the developer of this application."
+                   TextColor="Wheat"
+                   HorizontalTextAlignment="Center"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

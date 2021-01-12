@@ -15,6 +15,7 @@ namespace PandemicRole.ViewModels
 
             SelectRoleCommand = new Command(this.SelectRoleClicked);
             RandomRoleCommand = new Command(this.RandomRoleClicked);
+            BlisherSelectedCommand = new Command(this.BlisherSelectedClicked);
         }
 
 
@@ -37,5 +38,16 @@ namespace PandemicRole.ViewModels
 
             await this.Navigation.PushAsync(detailPage);
         }
+
+        public ICommand BlisherSelectedCommand { get; private set; }
+
+        private async void BlisherSelectedClicked()
+        {
+            var detailPage = new SelectedRolePage();
+            detailPage.BindingContext = new SelectedRolePageViewModel(this.Navigation, new Models.RoleModel() { RoleKey = "Role_90" });
+
+            await this.Navigation.PushAsync(detailPage);
+        }
+        
     }
 }
