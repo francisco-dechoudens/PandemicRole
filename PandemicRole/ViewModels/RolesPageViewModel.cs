@@ -63,11 +63,13 @@ namespace PandemicRole.ViewModels
 
         private async void RoleSelected()
         {
-            var detailPage = new SelectedRolePage();
-            detailPage.BindingContext = new SelectedRolePageViewModel(this.Navigation, SelectedRole);
-
-            await this.Navigation.PushAsync(detailPage);
+            if (SelectedRole != null)
+            {
+                var detailPage = new SelectedRolePage();
+                detailPage.BindingContext = new SelectedRolePageViewModel(this.Navigation, SelectedRole);
+                await this.Navigation.PushAsync(detailPage);
+                SelectedRole = null;
+            }
         }
-
     }
 }

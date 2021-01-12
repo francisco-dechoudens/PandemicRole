@@ -17,7 +17,7 @@
         <ListView ItemsSource="{Binding Roles}" CachingStrategy="RecycleElementAndDataTemplate"
                   HasUnevenRows="True"
                   BackgroundColor="Black"
-                  SelectedItem="{Binding SelectedRole}"
+                  SelectedItem="{Binding SelectedRole, Mode=TwoWay}"
                   SeparatorVisibility="None">
             <ListView.ItemTemplate>
                 <DataTemplate>
