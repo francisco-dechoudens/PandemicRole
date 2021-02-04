@@ -107,6 +107,11 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
+    <AndroidResource Include="Resources\mipmap-hdpi\myIcon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\myIcon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\myIcon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\myIcon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\myIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
