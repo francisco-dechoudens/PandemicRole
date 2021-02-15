@@ -55,12 +55,13 @@ namespace PandemicRole.ViewModels
             var roleList = await App.Repository.GetItemsAsync();
             var fillRoleModel = new List<RoleModel>();
 
-            foreach (var role in roleList)
+            foreach (var role in roleList.Where(rl => rl.Origin == "BaseGame"))
             {
                 fillRoleModel.Add(new RoleModel()
                 {
                     RoleKey = role.ID.ToString(),
-                    RoleName = role.Name
+                    RoleName = role.Name,
+                    RoleDescription = role.Description
                 });
             }
 

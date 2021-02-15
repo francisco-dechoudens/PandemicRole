@@ -19,22 +19,24 @@ namespace PandemicRole.ViewModels
         {
             Navigation = navigation;
 
-            var rm = new ResourceManager("PandemicRole.Infrastructure.Globalization.Localization", Assembly.GetExecutingAssembly());
-            if (roleModel == null)
-            {
-                var number = _random.Next(1, 89);
-                Role = new RoleModel()
-                {
-                    RoleKey = $"Role_{number}",
-                    RoleName = rm.GetString($"Role_{number}"),
-                    RoleDescription = rm.GetString($"Role_{number}_Description").Replace("\\n", Environment.NewLine)
-                };
-            }
-            else {
-                roleModel.RoleName = rm.GetString($"{roleModel.RoleKey}");
-                roleModel.RoleDescription = rm.GetString($"{roleModel.RoleKey}_Description").Replace("\\n", Environment.NewLine);
-                Role = roleModel;
-            }
+            //var rm = new ResourceManager("PandemicRole.Infrastructure.Globalization.Localization", Assembly.GetExecutingAssembly());
+            //if (roleModel == null)
+            //{
+            //    var number = _random.Next(1, 89);
+            //    Role = new RoleModel()
+            //    {
+            //        RoleKey = $"Role_{number}",
+            //        RoleName = rm.GetString($"Role_{number}"),
+            //        RoleDescription = rm.GetString($"Role_{number}_Description").Replace("\\n", Environment.NewLine)
+            //    };
+            //}
+            //else {
+            //    roleModel.RoleName = rm.GetString($"{roleModel.RoleKey}");
+            //    roleModel.RoleDescription = rm.GetString($"{roleModel.RoleKey}_Description").Replace("\\n", Environment.NewLine);
+            //    Role = roleModel;
+            //}
+
+            Role = roleModel;
 
 
             GoBackCommand = new Command(this.GoBack);
