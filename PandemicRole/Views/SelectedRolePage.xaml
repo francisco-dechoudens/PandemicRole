@@ -31,7 +31,7 @@
                        TextColor="White"></Label>
             </StackLayout>
             <ScrollView Grid.Row="1">
-                <StackLayout>   
+                <StackLayout Padding="10,0,10,0">   
                     <Label Text="Role Description"
                            FontSize="Medium" 
                            Padding="0,50,0,30"
@@ -39,7 +39,7 @@
                            TextColor="White"></Label>
                     <Label Text="{Binding Role.RoleDescription}"
                            FontSize="Large"
-                           Padding="10" TextType="Text"
+                           TextType="Text"
                            HorizontalTextAlignment="Center"
                            TextColor="White"></Label>
                 </StackLayout>
