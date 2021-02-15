@@ -31,6 +31,9 @@
     <Folder Include="Utilities\Extensions\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="PandemicRoleSQLite.db3" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Update="Infrastructure\Globalization\Localization.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Localization.Designer.cs</LastGenOutput>
@@ -47,5 +50,8 @@
     <Compile Update="Infrastructure\Globalization\Localization.es.Designer.cs">
       <DependentUpon>Localization.es.resx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="PandemicRoleSQLite.db3" />
   </ItemGroup>
 </Project>
