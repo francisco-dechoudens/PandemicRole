@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Reflection;
 
 namespace PandemicRole.Infrastructure
 {
@@ -20,7 +21,20 @@ namespace PandemicRole.Infrastructure
             get
             {
                 var basePath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-                return Path.Combine(basePath, DatabaseFilename);
+                var DatabasePath = Path.Combine(basePath, DatabaseFilename);
+
+                Assembly assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
+                Stream embeddedDatabaseStream = assembly.GetManifestResourceStream("PandemicRole.PandemicRoleSQLite.db3");
+
+                if (!File.Exists(DatabasePath))
+                {
+                    FileStream fileStreamToWrite = File.Create(DatabasePath);
+                    embeddedDatabaseStream.Seek(0, SeekOrigin.Begin);
+                    embeddedDatabaseStream.CopyTo(fileStreamToWrite);
+                    fileStreamToWrite.Close();
+                }
+
+                return DatabasePath;
             }
         }
     }
