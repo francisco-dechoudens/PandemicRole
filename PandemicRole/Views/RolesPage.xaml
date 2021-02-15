@@ -7,6 +7,7 @@
              xmlns:converters="clr-namespace:PandemicRole.Converters"
              NavigationPage.HasNavigationBar="True"
              Title="Roles"
+             BackgroundColor="Black"
              >
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -14,33 +15,47 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ListView ItemsSource="{Binding Roles}" CachingStrategy="RecycleElementAndDataTemplate"
-                  HasUnevenRows="True"
-                  BackgroundColor="Black"
-                  SelectedItem="{Binding SelectedRole, Mode=TwoWay}"
-                  SeparatorVisibility="None">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                          <StackLayout
-                              Margin="5,5"
-                              HeightRequest="100" >
-                                  <Frame VerticalOptions="FillAndExpand" HasShadow="False" BackgroundColor="#19FFFFFF" >
-                                  <Label TextColor="White"
-                                           FontSize="Large"
-                                           VerticalOptions="CenterAndExpand"
-                                           HorizontalTextAlignment="Center"
-                                           Text="{Binding RoleName}"/>
-                                  </Frame>
-                            </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-            <ListView.Behaviors>
-                <behaviors:EventToCommandBehavior EventName="ItemSelected"
-                                                  Command="{Binding RoleSelectedCommand}"
-                                                  Converter="{StaticResource SelectedItemConverter}" />
-            </ListView.Behaviors>
-        </ListView>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="10">
+                <Label Text="Filter Items:"
+                       TextColor="White"
+                       VerticalOptions="Center"/>
+                <Picker ItemsSource="{Binding FilterOptions}" 
+                        SelectedItem="{Binding SelectedFilter}"
+                        VerticalOptions="Center"
+                        BackgroundColor="#19FFFFFF"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <ListView ItemsSource="{Binding Roles}"
+                      CachingStrategy="RecycleElementAndDataTemplate"
+                      HasUnevenRows="True"
+                      BackgroundColor="Transparent"
+                      SelectedItem="{Binding SelectedRole, Mode=TwoWay}"
+                      SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                              <StackLayout
+                                  Margin="5,5"
+                                  HeightRequest="100" >
+                                      <Frame VerticalOptions="FillAndExpand" HasShadow="False" BackgroundColor="#19FFFFFF" >
+                                      <Label TextColor="White"
+                                               FontSize="Large"
+                                               VerticalOptions="CenterAndExpand"
+                                               HorizontalTextAlignment="Center"
+                                               Text="{Binding RoleName}"/>
+                                      </Frame>
+                                </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.Behaviors>
+                    <behaviors:EventToCommandBehavior EventName="ItemSelected"
+                                                      Command="{Binding RoleSelectedCommand}"
+                                                      Converter="{StaticResource SelectedItemConverter}" />
+                </ListView.Behaviors>
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

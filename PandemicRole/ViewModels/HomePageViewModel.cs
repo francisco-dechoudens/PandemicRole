@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Input;
+using MvvmHelpers;
 using PandemicRole.Views;
 using Xamarin.Forms;
 
@@ -34,7 +36,24 @@ namespace PandemicRole.ViewModels
         private async void RandomRoleClicked()
         {
             var detailPage = new SelectedRolePage();
-            detailPage.BindingContext = new SelectedRolePageViewModel(this.Navigation, null);
+
+
+            var roleList = await App.Repository.GetItemsAsync();
+            var roles = roleList.Where(rl => rl.Origin != "FanMade");
+
+            Random rand = new Random();
+            int toSkip = rand.Next(0, roles.Count());
+
+            var randomRole = roles.Skip(toSkip).Take(1).First();
+            var model = new Models.RoleModel()
+            {
+                RoleKey = randomRole.ID.ToString(),
+                RoleName = randomRole.Name,
+                RoleDescription = randomRole.Description,
+                RoleOrigin = randomRole.Origin
+            };
+
+            detailPage.BindingContext = new SelectedRolePageViewModel(this.Navigation, model);
 
             await this.Navigation.PushAsync(detailPage);
         }
@@ -44,7 +63,18 @@ namespace PandemicRole.ViewModels
         private async void BlisherSelectedClicked()
         {
             var detailPage = new SelectedRolePage();
-            detailPage.BindingContext = new SelectedRolePageViewModel(this.Navigation, new Models.RoleModel() { RoleKey = "Role_90" });
+
+            var role = await App.Repository.GetItemByNameAsync("Blisher (Pipeline)");
+
+            var model = new Models.RoleModel()
+            {
+                RoleKey = role.ID.ToString(),
+                RoleName = role.Name,
+                RoleDescription = role.Description,
+                RoleOrigin = role.Origin
+            };
+
+            detailPage.BindingContext = new SelectedRolePageViewModel(this.Navigation, model);
 
             await this.Navigation.PushAsync(detailPage);
         }

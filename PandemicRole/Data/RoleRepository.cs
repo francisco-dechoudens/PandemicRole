@@ -51,6 +51,11 @@ namespace PandemicRole.Data
             return Database.Table<Role>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
+        public Task<Role> GetItemByNameAsync(string name)
+        {
+            return Database.Table<Role>().Where(i => i.Name == name).FirstOrDefaultAsync();
+        }
+
         public Task<int> SaveItemAsync(Role item)
         {
             if (item.ID != 0)

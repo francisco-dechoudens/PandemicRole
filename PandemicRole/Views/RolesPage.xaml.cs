@@ -12,13 +12,11 @@ namespace PandemicRole.Views
             InitializeComponent();
         }
 
-
         protected override async void OnAppearing()
         {
             base.OnAppearing();
 
             await ((RolesPageViewModel)BindingContext).OnAppearing();
         }
-
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MvvmHelpers;
 using PandemicRole.ViewModels;
 
 namespace PandemicRole.Models
@@ -14,21 +15,28 @@ namespace PandemicRole.Models
         public string RoleKey
         {
             get => roleKey;
-            set => SetValue(ref roleKey, value, nameof(RoleKey));
+            set => SetProperty(ref roleKey, value, nameof(RoleKey));
         }
 
         private string roleName;
         public string RoleName
         {
             get => roleName;
-            set => SetValue(ref roleName, value, nameof(RoleName));
+            set => SetProperty(ref roleName, value, nameof(RoleName));
         }
 
         private string roleDescription;
         public string RoleDescription
         {
             get => roleDescription;
-            set => SetValue(ref roleDescription, value, nameof(RoleDescription));
+            set => SetProperty(ref roleDescription, value, nameof(RoleDescription));
+        }
+
+        private string roleOrigin;
+        public string RoleOrigin
+        {
+            get => roleOrigin;
+            set => SetProperty(ref roleOrigin, value, nameof(RoleOrigin));
         }
     }
 }
