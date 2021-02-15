@@ -13,6 +13,7 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -26,6 +27,8 @@
     <Folder Include="Behaviors\" />
     <Folder Include="Services\" />
     <Folder Include="Infrastructure\Globalization\" />
+    <Folder Include="Data\" />
+    <Folder Include="Utilities\Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Infrastructure\Globalization\Localization.resx">

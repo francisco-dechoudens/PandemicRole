@@ -39,24 +39,32 @@ namespace PandemicRole.ViewModels
 
             this.Navigation = navigation;
             roles = new List<RoleModel>();
-
-            var rm = new ResourceManager("PandemicRole.Infrastructure.Globalization.Localization", Assembly.GetExecutingAssembly());
-
-            foreach (var resource in rm.GetResourceSet(CultureInfo.CurrentCulture, true, true))
-            {
-                var r = (System.Collections.DictionaryEntry)resource;
-                if (Regex.IsMatch(r.Key.ToString(), @"^Role_.*\d$"))
-                {
-                    roles.Add(new RoleModel(){
-                        RoleKey = r.Key.ToString(),
-                        RoleName = r.Value.ToString()
-                    });;
-                }
-            }
-
-            roles = roles.OrderBy(r => r.RoleName).ToList();
+            
 
             RoleSelectedCommand = new Command(this.RoleSelected);
+        }
+
+
+        internal async Task OnAppearing()
+        {
+            await LoadList();
+        }
+
+        private async Task LoadList()
+        {
+            var roleList = await App.Repository.GetItemsAsync();
+            var fillRoleModel = new List<RoleModel>();
+
+            foreach (var role in roleList)
+            {
+                fillRoleModel.Add(new RoleModel()
+                {
+                    RoleKey = role.ID.ToString(),
+                    RoleName = role.Name
+                });
+            }
+
+            Roles = fillRoleModel.OrderBy(r => r.RoleName).ToList();
         }
 
         public ICommand RoleSelectedCommand { get; private set; }
@@ -71,5 +79,6 @@ namespace PandemicRole.ViewModels
                 SelectedRole = null;
             }
         }
+
     }
 }
