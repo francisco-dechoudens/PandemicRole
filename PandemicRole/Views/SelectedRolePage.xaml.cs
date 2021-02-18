@@ -9,6 +9,7 @@ namespace PandemicRole.Views
         public SelectedRolePage()
         {
             InitializeComponent();
+
             //role_description.Text = Localization.Role_15_Description.Replace("\\n", Environment.NewLine);
         }
 

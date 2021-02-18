@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PandemicRole.Views.Controls.ColorPickerView"
+             x:Name="this">
+    <ContentView.Content>
+        <StackLayout>
+            <Label Text="Select your color"
+                                                  FontSize="24"
+                               FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+            <ScrollView Orientation="Horizontal" BindingContext="{x:Reference this}">
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="CenterAndExpand">
+                    <Ellipse Fill="#B83F83"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    HorizontalOptions="Start" >
+                        <Ellipse.GestureRecognizers>
+                            <TapGestureRecognizer
+                            Command="{Binding ActionCommand}" CommandParameter="#B83F83|#FFFFFF" />
+                        </Ellipse.GestureRecognizers>
+                    </Ellipse>
+                    <Ellipse Fill="#7FC258"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    HorizontalOptions="Start" >
+                        <Ellipse.GestureRecognizers>
+                            <TapGestureRecognizer
+                            Command="{Binding ActionCommand}" CommandParameter="#7FC258|#000000" />
+                        </Ellipse.GestureRecognizers>
+                    </Ellipse>
+                    <Ellipse Fill="White"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    HorizontalOptions="Start" >
+                        <Ellipse.GestureRecognizers>
+                            <TapGestureRecognizer
+                            Command="{Binding ActionCommand}" CommandParameter="#FFFFFF|#000000" />
+                        </Ellipse.GestureRecognizers>
+                    </Ellipse>
+                    <Ellipse Fill="#E48206"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    HorizontalOptions="Start" >
+                        <Ellipse.GestureRecognizers>
+                            <TapGestureRecognizer
+                            Command="{Binding ActionCommand}" CommandParameter="#E48206|#000000" />
+                        </Ellipse.GestureRecognizers>
+                    </Ellipse>
+                    <Ellipse Fill="#A8711E"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    HorizontalOptions="Start" >
+                        <Ellipse.GestureRecognizers>
+                            <TapGestureRecognizer
+                            Command="{Binding ActionCommand}" CommandParameter="#A8711E|#FFFFFF" />
+                        </Ellipse.GestureRecognizers>
+                    </Ellipse>
+                    <Ellipse Fill="#1F7A5B"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    HorizontalOptions="Start" >
+                        <Ellipse.GestureRecognizers>
+                            <TapGestureRecognizer
+                            Command="{Binding ActionCommand}" CommandParameter="#1F7A5B|#FFFFFF" />
+                        </Ellipse.GestureRecognizers>
+                    </Ellipse>
+                    <Ellipse Fill="#42C2CE"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    HorizontalOptions="Start" >
+                        <Ellipse.GestureRecognizers>
+                            <TapGestureRecognizer
+                            Command="{Binding ActionCommand}" CommandParameter="#42C2CE|#000000" />
+                        </Ellipse.GestureRecognizers>
+                    </Ellipse>
+                    <Ellipse Fill="#000000"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    HorizontalOptions="Start" >
+                        <Ellipse.GestureRecognizers>
+                            <TapGestureRecognizer
+                            Command="{Binding ActionCommand}" CommandParameter="#000000|#FFFFFF" />
+                        </Ellipse.GestureRecognizers>
+                    </Ellipse>
+            </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

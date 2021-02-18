@@ -4,6 +4,7 @@
              x:Class="PandemicRole.Views.SelectedRolePage"
              xmlns:resources="clr-namespace:PandemicRole.Infrastructure.Globalization"
              xmlns:viewModel="clr-namespace:PandemicRole.ViewModels"
+             xmlns:control="clr-namespace:PandemicRole.Views.Controls"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="Black"
              >
@@ -22,27 +23,44 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <StackLayout BackgroundColor="DarkSlateBlue" Grid.Row="0">
-                <Label Text="{Binding Role.RoleName}"
-                       Padding="0,70,0,30"
-                       FontSize="24"
-                       FontAttributes="Bold"
-                       HorizontalTextAlignment="Center"
-                       TextColor="White"></Label>
+            <StackLayout BackgroundColor="DarkSlateBlue" Grid.Row="0" Padding="0,50,0,30">
+                <control:ColorPickerView ActionCommand="{Binding ColorPickerCommand}"/>
             </StackLayout>
             <ScrollView Grid.Row="1">
-                <StackLayout Padding="10,0,10,0">   
-                    <Label Text="Role Description"
-                           FontSize="Medium" 
-                           Padding="0,50,0,30"
-                           HorizontalTextAlignment="Center"
-                           TextColor="White"></Label>
-                    <Label Text="{Binding Role.RoleDescription}"
-                           FontSize="Large"
-                           TextType="Text"
-                           HorizontalTextAlignment="Center"
-                           TextColor="White"></Label>
-                </StackLayout>
+                 
+                <Frame
+                    BackgroundColor="{Binding CardColor}"
+                    CornerRadius="20"
+                    Margin="20,20,20,20">
+                    <StackLayout Padding="10,0,10,0">
+                       <Label Text="{Binding Role.RoleName}"
+                               Padding="0,70,0,30"
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"
+                               TextColor="{Binding TextColor}"></Label>
+                        <Label Text="Role Description"
+                               FontSize="Medium" 
+                               Padding="0,50,0,30"
+                               HorizontalTextAlignment="Center"
+                               TextColor="{Binding TextColor}"></Label>
+                        <Label Text="{Binding Role.RoleDescription}"
+                               FontSize="Large"
+                               TextType="Text"
+                               HorizontalTextAlignment="Center"
+                               TextColor="{Binding TextColor}"></Label>
+                    </StackLayout>
+                        <!--<Frame.Background>
+                        <LinearGradientBrush StartPoint="0,0"
+                                             EndPoint="1,0">
+                            <GradientStop Color="#21003B"
+                                          Offset="0.1"/>
+                            <GradientStop Color="{Binding FinalColor}"
+                                          Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Frame.Background>-->
+                 </Frame>
+
             </ScrollView>
             <StackLayout HeightRequest="50" Grid.Row="2" Padding="50,0,50,20">
                 <Button Text="Change Role"
