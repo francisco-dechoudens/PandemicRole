@@ -6,8 +6,8 @@
     <ContentView.Content>
         <StackLayout>
             <Label Text="Select your color"
-                                                  FontSize="24"
-                               FontAttributes="Bold"
+                   FontSize="24"
+                   FontAttributes="Bold"
                    HorizontalTextAlignment="Center"/>
             <ScrollView Orientation="Horizontal" BindingContext="{x:Reference this}">
                 <StackLayout
