@@ -8,8 +8,9 @@
             <Label Text="Select your color"
                    FontSize="24"
                    FontAttributes="Bold"
+                   TextColor="White"
                    HorizontalTextAlignment="Center"/>
-            <ScrollView Orientation="Horizontal" BindingContext="{x:Reference this}">
+            <ScrollView Padding="20,0,0,0" Orientation="Horizontal" BindingContext="{x:Reference this}">
                 <StackLayout
                     Orientation="Horizontal"
                     HorizontalOptions="CenterAndExpand">

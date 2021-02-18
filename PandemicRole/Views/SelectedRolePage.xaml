@@ -6,8 +6,16 @@
              xmlns:viewModel="clr-namespace:PandemicRole.ViewModels"
              xmlns:control="clr-namespace:PandemicRole.Views.Controls"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="Black"
              >
+            <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                                EndPoint="1,0">
+            <GradientStop Color="#21003B"
+                            Offset="0.1"/>
+            <GradientStop Color="#850497"
+                            Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
     <ContentPage.Content>
         <!--<Grid Padding="0">
             <Image
@@ -23,7 +31,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <StackLayout BackgroundColor="DarkSlateBlue" Grid.Row="0" Padding="0,30,0,30">
+            <StackLayout BackgroundColor="Transparent" Grid.Row="0" Padding="0,30,0,30">
                 <control:ColorPickerView ActionCommand="{Binding ColorPickerCommand}"/>
             </StackLayout>
             <ScrollView Grid.Row="1">

@@ -7,8 +7,16 @@
              xmlns:converters="clr-namespace:PandemicRole.Converters"
              NavigationPage.HasNavigationBar="True"
              Title="Roles"
-             BackgroundColor="Black"
              >
+        <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                                EndPoint="1,0">
+            <GradientStop Color="#21003B"
+                            Offset="0.1"/>
+            <GradientStop Color="#850497"
+                            Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemConverter" />

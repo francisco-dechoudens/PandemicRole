@@ -46,7 +46,7 @@ namespace PandemicRole.ViewModels
         public RolesPageViewModel(INavigation navigation)
         {
             var navigationPage = Application.Current.MainPage as NavigationPage;
-            navigationPage.BarBackgroundColor = Color.Black;
+            navigationPage.BarBackgroundColor = Color.FromHex("#0B306B");
             navigationPage.BarTextColor = Color.White;
 
             this.Navigation = navigation;
